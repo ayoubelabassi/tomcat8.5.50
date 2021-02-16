@@ -16,7 +16,7 @@ RUN apk add openjdk8
 RUN wget --quiet https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.50/bin/apache-tomcat-8.5.50.tar.gz -O /tmp/tomcat.tar.gz && \
 tar xzvf /tmp/tomcat.tar.gz -C /opt && \
 mv /opt/apache-tomcat-8.5.50 /opt/tomcat && \
-rm /tmp/tomcat.tar.gz
+rm /tmp/tomcat.tar.gz && \
 rm -rf /opt/tomcat/webapps/examples && \
 rm -rf /opt/tomcat/webapps/docs && \
 rm -rf /opt/tomcat/webapps/ROOT
